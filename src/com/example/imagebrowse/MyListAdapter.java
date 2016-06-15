@@ -64,7 +64,7 @@ public class MyListAdapter extends BaseAdapter{
 		
 		if(bean.urls !=null && bean.urls.length>0){
 			holder.gridview.setVisibility(View.VISIBLE);
-			Log.e("bean.urls----", "----"+bean.urls);
+			Log.e("bean.urls----", "----------"+bean.urls);
 			holder.gridview.setAdapter(new MyGridAdapter(bean.urls, mContext));
 			holder.gridview.setOnItemClickListener(new OnItemClickListener() {
 
