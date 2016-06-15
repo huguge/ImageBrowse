@@ -73,6 +73,7 @@ public class MyListAdapter extends BaseAdapter{
 						int position, long id) {
 					Log.e("position----", "---"+position);
 					imageBrower(position,bean.urls);
+					
 				}
 			});
 			
