@@ -45,16 +45,16 @@ public class MyListAdapter extends BaseAdapter{
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder holder;
-		if(convertView==null){
-			holder=new ViewHolder();
-			convertView=mInflater.inflate(R.layout.list_item, null);
-			holder.avator=(ImageView) convertView.findViewById(R.id.avator);
-			holder.name=(TextView) convertView.findViewById(R.id.name);
-			holder.content=(TextView) convertView.findViewById(R.id.content);
-			holder.gridview=(NoScrollGridView) convertView.findViewById(R.id.gridView);
+		if (convertView == null) {
+			holder = new ViewHolder();
+			convertView = mInflater.inflate(R.layout.list_item, null);
+			holder.avator = (ImageView) convertView.findViewById(R.id.avator);
+			holder.name = (TextView) convertView.findViewById(R.id.name);
+			holder.content = (TextView) convertView.findViewById(R.id.content);
+			holder.gridview = (NoScrollGridView) convertView.findViewById(R.id.gridView);
 			convertView.setTag(holder);
-		}else{
-			holder=(ViewHolder) convertView.getTag();
+		} else {
+			holder = (ViewHolder) convertView.getTag();
 		}
 		
 		final MyBean bean=getItem(position);
